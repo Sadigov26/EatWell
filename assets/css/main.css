@@ -1,0 +1,330 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(64, 63, 63, 0.316);
+  position: absolute;
+}
+header .containerHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  background-color: transparent;
+  z-index: 199;
+}
+header .containerHeader .logo a {
+  text-decoration: none;
+}
+header .containerHeader .logo a h1 {
+  font-family: "Raleway";
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+header .containerHeader .navHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .containerHeader .navHeader ul {
+  list-style: none;
+  display: flex;
+  gap: 45px;
+}
+header .containerHeader .navHeader a {
+  font-family: "Raleway";
+  color: #767779;
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-size: 13px;
+  line-height: 21px;
+  text-decoration: none;
+}
+header .containerHeader .navHeader a:hover {
+  transition: 0.3s;
+  color: rgba(255, 255, 255, 0.75);
+}
+header .containerHeader .navHeader .whiteNav {
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (min-width: 300px) and (max-width: 991px) {
+  header .containerHeader .navHeader {
+    display: none;
+  }
+}
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../../assets/image/bg_3.jpg);
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+#hero .welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+#hero .welcome h2 {
+  font-family: "Playfair Display";
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 101px;
+  letter-spacing: 2px;
+}
+#hero .welcome p {
+  font-family: "Raleway";
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 29px;
+}
+#hero .welcome button {
+  font-family: "Playfair Display";
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  background-color: transparent;
+  padding: 13px 40px;
+  transition: 0.4s;
+  border: 2px solid rgb(255, 255, 255);
+}
+#hero .welcome button:hover {
+  color: black;
+  background-color: rgb(255, 255, 255);
+  transition: 0.4s;
+}
+
+#aboutSite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8em;
+}
+#aboutSite .containerAbout {
+  width: 67%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+#aboutSite .containerAbout .aboutDesc {
+  width: 50%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: start;
+}
+#aboutSite .containerAbout .aboutDesc h3 {
+  font-family: "Raleway";
+  color: rgb(212, 212, 212);
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 6px;
+}
+#aboutSite .containerAbout .aboutDesc h2 {
+  font-family: "Playfair Display";
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 60px;
+}
+#aboutSite .containerAbout .aboutDesc p {
+  font-family: "Raleway";
+  color: rgb(184, 184, 184);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+#aboutSite .containerAbout .aboutDesc button {
+  font-family: "Playfair Display";
+  color: rgb(184, 184, 184);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  background-color: transparent;
+  padding: 13px 20px;
+  transition: 0.4s;
+  border: 2px solid rgb(184, 184, 184);
+  width: 60%;
+}
+#aboutSite .containerAbout .aboutDesc button:hover {
+  color: black;
+  background-color: #FDA403;
+  transition: 0.4s;
+}
+#aboutSite .containerAbout .aboutImg {
+  width: 50%;
+}
+#aboutSite .containerAbout .aboutImg img {
+  max-width: 100%;
+  height: auto;
+}
+
+#offerSite {
+  display: flex;
+  background-color: #F8F9FA;
+  padding: 8em;
+  justify-content: center;
+  align-items: center;
+}
+#offerSite .offerContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+}
+#offerSite .offerContainer .noqte {
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  color: #CCCCCC;
+  justify-content: center;
+  gap: 8px;
+  font-size: 13px;
+}
+#offerSite .offerContainer .noqte #one {
+  color: #CB8402;
+}
+#offerSite .offerContainer .offerDesc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  padding-bottom: 15px;
+}
+#offerSite .offerContainer .offerDesc h3 {
+  font-family: "Raleway";
+  color: rgb(212, 212, 212);
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 6px;
+}
+#offerSite .offerContainer .offerDesc h2 {
+  font-family: "Playfair Display";
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 60px;
+}
+#offerSite .offerContainer .offerDesc p {
+  font-family: "Raleway";
+  color: rgb(184, 184, 184);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+#offerSite .offerContainer .offerProduct {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 100%;
+  background-color: white;
+  flex-wrap: wrap;
+  align-items: end;
+}
+#offerSite .offerContainer .offerProduct .product {
+  display: flex;
+  width: 32%;
+  min-height: 29vh;
+  flex-direction: column;
+  align-items: center;
+}
+#offerSite .offerContainer .offerProduct .product .proImg img {
+  width: 100%;
+}
+#offerSite .offerContainer .offerProduct .product .proDesc {
+  width: 80%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+#offerSite .offerContainer .offerProduct .product .proDesc h4 {
+  font-family: "Playfair Display";
+  color: rgb(253, 164, 3);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+}
+#offerSite .offerContainer .offerProduct .product .proDesc h5 {
+  font-family: "Playfair Display";
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+}
+#offerSite .offerContainer .offerProduct .product .proDesc p {
+  font-family: "Raleway";
+  color: rgb(184, 184, 184);
+  font-weight: 400;
+  font-size: 16px;
+}
+#offerSite .offerContainer .offerProduct .product .proDesc button {
+  background-color: rgb(253, 164, 3);
+  width: 120px;
+  color: white;
+  border: none;
+  transition: 0.4s;
+  padding: 15px 15px;
+  cursor: pointer;
+}
+#offerSite .offerContainer .offerProduct .product .proDesc button:hover {
+  background-color: #CB8402;
+  transition: 0.4s;
+}
+
+@media screen and (min-width: 300px) and (max-width: 991px) {
+  #offerSite {
+    padding: 10px;
+  }
+  #offerSite .offerContainer {
+    width: 30%;
+  }
+  #offerSite .offerContainer .offerProduct {
+    flex-direction: column;
+    overflow: auto;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 991px) {
+  #aboutSite {
+    padding: 10px;
+  }
+  #aboutSite .containerAbout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  #aboutSite .containerAbout .aboutDesc h2 {
+    font-size: 27px;
+  }
+}
